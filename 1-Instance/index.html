@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue3 | Instance</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <p> {{ description }} </p>
+        <a target="_blank" v-bind:href="url">Link</a>
+        <br>  
+        <a v-bind:target="allLinkContent.target" v-bind:href="allLinkContent.url" v-bind:alt="allLinkContent.alt" v-bind:randomattribute="variable">{{ allLinkContent.title }}</a>  
+        <br>
+        <a :target="allLinkContent.target" :href="allLinkContent.url" :alt="allLinkContent.alt" :randomattribute="variable">{{ allLinkContent.title }}</a>  
+        <br>
+        <br>
+        <button v-on:click="changeTitle('Change First Title')">Change 1</button>
+        <button v-on:click="changeTitle('Change Second Title')">Change 2</button>
+        <br><br>
+        <div @mousemove="updateCoords('MouseMove', $event)" class="box" @click="changeTitle('Box Title')"></div>
+        <span>{{ coords.x }},{{ coords.y }}</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
