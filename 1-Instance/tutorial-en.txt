@@ -1,0 +1,11 @@
+1-'const app = Vue.createApp({ ... }).mount("#app");': This line creates a Vue application and mounts it to the HTML element with the id '#app'. In other words, the Vue application will run within this HTML element.
+
+2-'data() { ... }': This function defines the data model of the Vue application. It contains variables used to store the application's state.
+  -Variables like 'title', 'description', and 'url' store the page's title, description, and a URL.
+  -The 'allLinkContent' object holds the text, target, URL, and alternative content of a link.
+  -'variable' represents a text value.
+  -'coords' is an object containing x and y coordinates.
+
+3-'methods: { ... }': This section contains the functions (methods) that the Vue application can use.
+  -'changeTitle(pTitle)': The title-changing function takes a parameter and updates the 'title' data using this parameter.
+  -'updateCoords(message, event)': The coordinates update function takes a message and an event object. This function updates the title with coordinates and sets the 'coords' data to the updated coordinates.
