@@ -1,0 +1,19 @@
+1-'data() { ... }': This function defines the Vue application's data model. It contains two numerical data items 
+used to store the application's state: 'counter' and 'counter2'. Both are initially set to 0.
+
+2-'methods: { ... }': This section contains the methods (functions) that the Vue application can use. 
+However, in this example, the methods are commented out (indicated by the commented lines), meaning these methods are not being used.
+
+3-'computed: { ... }': This section defines computed properties. Computed properties are used to store 
+values calculated based on data. There are two computed properties:
+
+    -'getCounterResult': This computed property returns "Big" or "Small" based on the 'counter' value.
+    -'getCounter2Result': Similarly, this computed property returns "Big" or "Small" based on the 'counter2' value.
+
+4-'watch: { ... }': This section is used to watch for changes in specific data. It allows triggering actions based on observed changes. For instance:
+
+    -It watches changes in the 'counter' and 'counter2' data and logs their old and new values to the console.
+    -It also watches the results of the 'getCounterResult' and 'getCounter2Result' computed properties and logs their old and new values to the console.
+
+-The purpose of this code is to serve as an example of understanding Vue.js's reactivity features and data flow. It utilizes Vue properties like 
+'computed' and 'watch' to observe changes triggered by data modifications or calculations and understand how they behave.
