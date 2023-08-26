@@ -1,0 +1,25 @@
+1-'data() { ... }': Bu fonksiyon, Vue uygulamasının başlangıç verilerini belirler. 'title' ve 'itemList' adlı iki veriyi içerir.
+
+2-'beforeCreate() { ... }': Bu, Vue bileşeninin oluşturulma öncesinde çalışan bir hayat döngüsü kancasıdır.
+
+3-'created() { ... }': Bileşen oluşturulduktan sonra çalışır. İlk olarak 'itemList' verisini 2 saniye sonra doldurur, ardından başlığı 3 saniye sonra değiştirir.
+
+4-'beforeMount() { ... }': Bileşenin HTML içine monte edilmeden önce çalışan bir kancasıdır.
+
+5-'mounted() { ... }': Bileşen HTML içine monte edildikten sonra çalışır. HTML içinde işlemler yapmak için sık kullanılır.
+
+6-'beforeUpdate() { ... }': Veriler güncellendikten sonra bileşenin güncellenmesinden önce çalışır.
+
+7-'updated() { ... }': Veriler güncellendikten sonra bileşen güncellendikten hemen sonra çalışır.
+
+8-'beforeUnmount() { ... }': Bileşenin kaldırılması öncesinde çalışan bir kancasıdır.
+
+9-'unmounted() { ... }': Bileşen kaldırıldıktan sonra çalışır.
+
+10-'app.mount("#app");': Vue uygulamasını '#app' kimliğine sahip bir HTML öğesine monte eder.
+
+11-'setTimeout(() => { app.unmount(); }, 5000);': 5 saniye sonra uygulamayı kaldırmak için kullanılır.
+
+-Son olarak, 'const app2 = Vue.createApp({})' satırı yorum halindedir ancak bir başka Vue uygulaması örneği oluşturmanıza olanak tanır.
+
+-Bu kod, Vue bileşenlerinin oluşturulma, montaj, güncelleme ve kaldırma süreçlerini anlamak için özellikle hayat döngüsü olaylarını kullanarak tasarlanmıştır.

@@ -1,0 +1,25 @@
+1-'data() { ... }': This function defines the initial data for the Vue application. It includes two data properties: 'title' and 'itemList'.
+
+2-'beforeCreate() { ... }': This is a Vue lifecycle hook that runs before the component is created.
+
+3-'created() { ... }': It runs after the component is created. It first populates the 'itemList' data after a delay of 2 seconds, then changes the title after a delay of 3 seconds.
+
+4-'beforeMount() { ... }': This is a hook that runs before the component is mounted into the HTML.
+
+5-'mounted() { ... }': It runs after the component is mounted into the HTML. This is often used for operations involving the HTML structure.
+
+6-'beforeUpdate() { ... }': This hook runs before the component is updated with new data.
+
+7-'updated() { ... }': It runs immediately after the component is updated with new data.
+
+8-'beforeUnmount() { ... }': This hook runs before the component is unmounted.
+
+9-'unmounted() { ... }': It runs after the component is unmounted.
+
+10-'app.mount("#app");': This mounts the Vue application to an HTML element with the id '#app'.
+
+11-'setTimeout(() => { app.unmount(); }, 5000);': This is used to unmount the application after 5 seconds.
+
+-Finally, the line 'const app2 = Vue.createApp({})' is commented out, but it allows you to create another instance of a Vue application.
+
+-This code is designed to help you understand Vue component creation, mounting, updating, and unmounting processes, specifically utilizing lifecycle events.
