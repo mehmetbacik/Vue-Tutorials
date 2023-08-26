@@ -14,5 +14,5 @@
         --'this.fullName = event.target.value;': Bu satır, Vue örneğinin 'fullName' özelliğini girdi alanının değerine ayarlar. Başka bir deyişle, 'fullName' özelliği 
         kullanıcının girdisine bağlanır.
 
--Bu nedenle, bu kodun temel amacı, kullanıcıların tam adını girebileceği etkileşimli bir girdi alanı oluşturmaktır. Kullanıcı yazdıkça, Vue uygulamasındaki fullName 
+-Bu nedenle, bu kodun temel amacı, kullanıcıların tam adını girebileceği etkileşimli bir girdi alanı oluşturmaktır. Kullanıcı yazdıkça, Vue uygulamasındaki 'fullName' 
 özelliği gerçek zamanlı olarak güncellenir ve girdi alanının geçerli değerini yansıtır. Bu, Vue.js'in temel özelliklerinden birini gösterir: veri bağlama ve reaktivite.

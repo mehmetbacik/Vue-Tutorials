@@ -1,0 +1,19 @@
+1-'data() { ... }': Bu fonksiyon, Vue uygulamasının veri modelini tanımlar. Uygulamanın durumunu depolamak için kullanılan 
+'counter' ve 'counter2' adlı iki sayısal veri öğesi bulunur. Başlangıçta her ikisi de 0 olarak ayarlanır.
+
+2-'methods: { ... }': Bu bölüm, Vue uygulamasının kullanabileceği yöntemleri (metodları) içerir. Ancak, bu örnekte yöntemler 
+devre dışı bırakılmıştır (yorum satırlarıyla belirtilmiş), yani bu yöntemler kullanılmıyor.
+
+3-'computed: { ... }': Bu bölüm, 'computed' özelliklerini tanımlar. Computed özellikler, verilere dayalı olarak hesaplanan 
+değerleri depolamak için kullanılır. İki adet computed özelliği bulunur:
+
+    -'getCounterResult': Bu computed özelliği, 'counter' değerine göre "Big" (Büyük) veya "Small" (Küçük) döndürür.
+    -'getCounter2Result': Bu computed özelliği de 'counter2' değerine göre "Big" veya "Small" döndürür.
+
+4-'watch: { ... }': Bu bölüm, belirli verilerin değişimlerini izlemek için kullanılır. Değişiklikleri izleyerek gerçekleşen eylemleri tetiklemek mümkündür. Örneğin:
+
+    -'counter' ve 'counter2' verilerinin değişimlerini izler ve eski ve yeni değerlerini konsola yazdırır.
+    -'getCounterResult' ve 'getCounter2Result' computed özelliklerinin sonuçlarını izler ve eski ve yeni değerlerini konsola yazdırır.
+
+-Kodun amacı, Vue.js'in reaktif özelliklerini ve veri akışını anlamak için yapılmış bir örnektir. Sayfada veri değiştiğinde veya hesaplamalar sonucunda tetiklenen 
+davranışları izlemek ve anlamak için 'computed' ve 'watch' gibi Vue özelliklerini kullanmaktadır.
