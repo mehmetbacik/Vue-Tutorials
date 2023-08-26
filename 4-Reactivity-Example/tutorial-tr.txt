@@ -1,0 +1,21 @@
+1-'data() { ... }': 'data' fonksiyonu, Vue uygulamasının başlangıç durumunu tanımlar. İçerdiği özellikler:
+
+    -'search': Kullanıcının girdiği arama sorgusunu saklayan bir dize özelliği.
+    -'itemList': Arama yapılacak örnek öğeleri içeren bir dizi.
+    -'//filteredList': Bu satır yorum halinde, filtrelenmiş arama sonuçlarını saklamak için bir alanı işaret eder. Ancak, kodun mevcut durumunda kullanılmıyor.
+
+2-'methods: { ... }': Bu bölüm, Vue uygulamasında çağrılabilen yöntemleri (fonksiyonları) içerir. Bu durumda yalnızca bir yöntem var:
+
+    -'searchList()': Kullanıcı bir arama yapınca çağrılan bir yöntemdir. Ancak şu an için yorum satırıyla devre dışı bırakılmış durumda ve herhangi bir 
+    işlevselliği bulunmuyor. Gerçek senaryoda, bu yöntem arama sorgusuna göre 'filteredList''ı güncellemek için kullanılabilir.
+
+3-'computed: { ... }': 'computed' bölümü, mevcut verilere dayalı olarak hesaplanan özellikleri tanımlar.
+
+    -'filteredList()': Bu hesaplanan özellik, 'itemList''i filtreleyerek yeni bir dizi döndürür. Her bir öğeyi 'itemList' içerisinde arar ve içinde 'search' 
+    sorgusunu barındırıyorsa listeye dahil eder. Bu sayede, kullanıcı arama sorgusu girerek, hesaplanan özellik gerçek zamanlı olarak güncellenir ve arama 
+    sorgusuna uyan öğelerin filtrelenmiş listesini gösterir.
+
+-Son olarak, 'app.mount("#app")'; satırı, Vue uygulamasını '#app' kimliğine sahip bir HTML öğesine monte eder.
+
+-Kısacası, bu kod, kullanıcının girdisine göre öğelerin gerçek zamanlı olarak filtrelenip listelenmesini sağlayan canlı bir arama işlevselliğini nasıl 
+oluşturacağınızı gösterir. Vue.js'in reaktivite özelliklerini ve hesaplanan özelliklerin dinamik davranış elde etmedeki gücünü sergiler.

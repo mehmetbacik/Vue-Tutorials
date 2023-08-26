@@ -1,0 +1,20 @@
+1-'data() { ... }': The 'data' function defines the initial state of the Vue application. It includes:
+
+    -'search': A string property that will store the search query entered by the user.
+    -'itemList': An array that holds sample items to be searched through.
+    -'//filteredList': This line is commented out but suggests a placeholder for storing filtered search results. However, in the code's current state, it's not used.
+
+2-'methods: { ... }': This section contains methods (functions) that can be called in the Vue application. In this case, it has a single method:
+
+    -'searchList()': This method is called when the user performs a search. However, it's currently commented out and doesn't have any functionality. In a real scenario, 
+    this method could be used to update the 'filteredList' based on the search query.
+
+3-'computed: { ... }': The 'computed' section defines computed properties, which are based on the existing data and change automatically when the underlying data changes.
+
+    -'filteredList()': This computed property calculates and returns a new array by filtering the 'itemList'. It checks if each item in 'itemList' includes the search query. 
+    This way, as the user types a 'search' query, the computed property updates in real-time to show the filtered list of items that match the query.
+
+-Finally, the 'app.mount("#app")'; line mounts the Vue application to an HTML element with the id '#app'.
+
+-In essence, this code demonstrates how to create a live search functionality where the user's input updates the displayed list of items in real-time, as filtered by their 
+search query. It showcases Vue.js's reactivity and the power of computed properties in achieving dynamic behavior.
