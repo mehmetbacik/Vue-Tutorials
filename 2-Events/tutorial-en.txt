@@ -1,4 +1,5 @@
-1-'const app = Vue.createApp({ ... }).mount("#app");': Similar to the previous explanation, this line creates a Vue application instance and mounts it to an HTML element with the id '#app'. The Vue application will be contained within this element.
+1-'const app = Vue.createApp({ ... }).mount("#app");': Similar to the previous explanation, this line creates a Vue application instance and mounts it to 
+an HTML element with the id '#app'. The Vue application will be contained within this element.
 
 2-'data() { ... }': The 'data' function is defining the initial data for the Vue application. In this case, it contains a single property:
 
@@ -6,7 +7,13 @@
 
 3-'methods: { ... }': The 'methods' section contains methods that can be called and used within the Vue application.
 
-    -'updateValue(event)': This method is intended to update the 'fullName' property based on user input. It takes an 'event' parameter, which represents the event that triggered the method (such as an input field change event).
+    -'updateValue(event)': This method is intended to update the 'fullName' property based on user input. It takes an 'event' parameter, which represents the event that 
+    triggered the method (such as an input field change event).
 
-        --'console.log(event.target.value);': This line logs the current value of the input field to the console. It's helpful for debugging purposes to see the value as the user types.
-        --'this.fullName = event.target.value;': This line sets the 'fullName' property of the Vue instance to the value of the input field. In other words, it binds the 'fullName' property to the user's input.
+        --'console.log(event.target.value);': This line logs the current value of the input field to the console. It's helpful for debugging 
+        purposes to see the value as the user types.
+        --'this.fullName = event.target.value;': This line sets the 'fullName' property of the Vue instance to the value of the input field. In other words, 
+        it binds the 'fullName' property to the user's input.
+
+-So, the main purpose of this code is to create an interactive input field where users can type their full name. As they type, the fullName property in the 
+Vue application is updated in real-time, reflecting the current value of the input field. This showcases one of the core features of Vue.js: data binding and reactivity.

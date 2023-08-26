@@ -1,4 +1,5 @@
-1-'const app = Vue.createApp({ ... }).mount("#app");': Bu satır, Vue uygulamasını oluşturur ve '#app' id'sine sahip HTML elementine monte eder. Yani, Vue uygulaması bu HTML elementi içinde çalışacaktır.
+1-'const app = Vue.createApp({ ... }).mount("#app");': Bu satır, Vue uygulamasını oluşturur ve '#app' id'sine sahip HTML elementine monte eder. Yani, Vue uygulaması 
+bu HTML elementi içinde çalışacaktır.
 
 2-'data() { ... }': Bu fonksiyon, Vue uygulamasının veri modelini tanımlar. Uygulamanın durumunu depolamak için kullanılan değişkenleri içerir.
 
@@ -10,4 +11,8 @@
 3-'methods: { ... }': Bu bölüm, Vue uygulamasının kullanabileceği işlevleri (metodları) içerir.
 
 	-'changeTitle(pTitle)': Başlık değiştirme işlevi, bir parametre alır ve bu parametreyi kullanarak 'title' verisini günceller.
-	-'updateCoords(message, event)': Koordinatları güncelleme işlevi, bir mesaj ve olay nesnesi alır. Bu işlev, başlığı koordinatlarla günceller ve 'coords' verisini güncel koordinatlara ayarlar.
+	-'updateCoords(message, event)': Koordinatları güncelleme işlevi, bir mesaj ve olay nesnesi alır. Bu işlev, başlığı koordinatlarla günceller ve 'coords' verisini 
+	güncel koordinatlara ayarlar.
+
+-Kodun amacı, Vue.js'in gücünü kullanarak bir kullanıcı arayüzü oluşturmak ve bu arayüzde başlık, koordinatlar gibi dinamik verileri yönetmektir. Ayrıca, fare 
+olayları gibi etkileşimlerle bu verileri güncellemek de mümkündür.
