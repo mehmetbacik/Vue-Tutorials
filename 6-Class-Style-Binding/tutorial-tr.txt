@@ -1,0 +1,18 @@
+1-'data() { ... }': Bu fonksiyon, Vue uygulamasının başlangıç verilerini belirler. İçerdiği özellikler:
+
+    -'showBorder': Başlangıçta yanlış olarak ayarlanmış bir durum değişkeni. Bu durum, bir sınıfın uygulanıp uygulanmayacağını belirler.
+    -'redBG': Başlangıçta yanlış olarak ayarlanmış bir başka durum değişkeni. Bu durum, bir sınıfın uygulanıp uygulanmayacağını belirler.
+    -'boxClass': Bir sınıf adı dizisi. Başlangıçta "border red" olarak ayarlanmış. Ancak, bu veri, hesaplanan bir sınıfla değiştirilecek.
+    -'bgColor': Bir arka plan rengi. Başlangıçta "cyan" olarak ayarlanmış.
+
+2-'computed: { ... }': Bu bölüm, hesaplanmış özellikleri (computed properties) belirtir. Hesaplanmış özellikler, mevcut verilere dayalı 
+olarak hesaplanan değerleri sağlar.
+
+    -'boxClasses()': Bu hesaplanmış özelliğin amacı, sınıfları dinamik olarak ayarlamaktır. Bir nesne döndürür: "border-dashed" sınıfını 
+    'showBorder' durumuna bağlar ve "red" sınıfını 'redBG' durumuna bağlar.
+
+3-'app.mount("#app");': Vue uygulamasını '#app' kimliğine sahip bir HTML öğesine monte eder.
+
+-Kodun amacı, sınıfları ve stilleri dinamik olarak yönetmeyi göstermektir. 'showBorder' ve 'redBG' durumlarına bağlı olarak sınıfların nasıl 
+eklendiğini veya çıkarıldığını gösterir. Aynı zamanda 'boxClass' özelliğinin nasıl hesaplanmış sınıflarla güncellenebileceğini ve hesaplanmış 
+özelliklerin sınıf yönetimindeki esnekliğini gösterir.
