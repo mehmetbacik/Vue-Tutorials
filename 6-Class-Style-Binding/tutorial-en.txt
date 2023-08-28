@@ -1,0 +1,18 @@
+1-'data() { ... }': This function defines the initial data for the Vue application. It includes the following properties:
+
+    -'showBorder': A boolean initially set to 'false'. This state determines whether a class will be applied or not.
+    -'redBG': Another boolean initially set to 'false'. This state determines whether a class will be applied or not.
+    -'boxClass': A string array of class names. Initially set as "border red". However, this data will be replaced with a computed class.
+    -'bgColor': A background color. Initially set as "cyan".
+
+2-'computed: { ... }': This section specifies computed properties. Computed properties provide values that are calculated based on 
+existing data.
+
+    -'boxClasses()': The purpose of this computed property is to dynamically set classes. It returns an object: it maps the 
+    "border-dashed" class to the 'showBorder' state and the "red" class to the 'redBG' state.
+
+3-'app.mount("#app");': This mounts the Vue application to an HTML element with the id '#app'.
+
+-The purpose of the code is to demonstrate dynamic class and style management. It shows how classes are added or removed based on the 
+'showBorder' and 'redBG' states. It also illustrates how the 'boxClass' property can be updated with computed classes, showcasing the flexibility 
+of computed properties in class management.
