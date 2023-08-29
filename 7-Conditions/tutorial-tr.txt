@@ -1,0 +1,17 @@
+1-'data() { ... }': Bu bölüm, Vue uygulamasının başlangıç verilerini belirler.
+
+    -'showContainer': Bu bir bayrak değişkenidir ve başlangıçta 'false' olarak ayarlanmıştır. Bu durum, bir konteynerın görüntülenip 
+    görüntülenmeyeceğini belirler. Bu kod örneğinde kullanılmamış gibi görünmektedir.
+    -'counter': Sayaç değeri, başlangıçta '0' olarak ayarlanmıştır.
+
+2-'computed: { ... }': Bu bölüm, hesaplanmış özellikleri (computed properties) belirtir.
+
+    -'counterBoxClass()': Bu hesaplanmış özellik, 'counter' durumuna göre sınıfları dinamik olarak ayarlar. Eğer 'counter' pozitif bir değere sahipse, 
+    'bg-success' (yeşil arka plan) ve 'text-white' (beyaz metin) sınıflarını ekler. Eğer 'counter' negatif bir değere sahipse, 'bg-danger' (kırmızı arka plan) 
+    ve 'text-white' sınıflarını ekler. Eğer 'counter' 0 ise, herhangi bir sınıf eklenmez.
+
+3-'app.mount("#app");': Vue uygulamasını '#app' kimliğine sahip bir HTML öğesine monte eder.
+
+-Sonuç olarak, bu kod parçası, bir sayaç değerine bağlı olarak arka plan ve metin renginin dinamik olarak değiştirildiği basit bir örnek sunar. Sayaç pozitifse 
+yeşil arka plan ve beyaz metin, negatifse kırmızı arka plan ve beyaz metin uygulanırken, 0 ise herhangi bir sınıf eklenmez. Bu şekilde, hesaplanmış sınıfların 
+dinamik stil yönetiminde nasıl kullanılabileceğini gösterir.
