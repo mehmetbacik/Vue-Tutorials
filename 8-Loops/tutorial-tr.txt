@@ -1,0 +1,22 @@
+1-'data() { ... }': Bu bölüm, Vue uygulamasının başlangıç verilerini belirtir.
+
+    -'todoList': Yapılacak öğelerin bulunduğu bir dizi. Her öğe, 'id' (benzersiz bir kimlik), 'text' (yapılacak içeriği) ve 'completed' 
+    (bir yapılacağın tamamlanıp tamamlanmadığını belirten bir boolean) gibi özelliklerle temsil edilir.
+
+2-'methods: { ... }': Bu bölüm, Vue uygulaması içinde çağrılabilen yöntemleri belirtir.
+
+    -'addTodo(event)': Bu yöntem, yeni bir yapılacak eklendiğinde çağrılır. Bir yeni yapılacak nesnesini 'todoList' dizisine ekler. 
+    'id' mevcut zaman damgası kullanılarak oluşturulur, 'text' girdi alanı değerinden alınır. 'completed' özelliği 'false' olarak ayarlanır, 
+    bu da yapılacağın tamamlanmadığını belirtir. Ekleme işleminden sonra girdi alanı değeri temizlenir.
+    -'removeItem(todoItem)': Bu yöntem, bir yapılacak öğesini 'todoList' dizisinden kaldırır. Seçilen yapılacak öğesini diziden çıkarmak için 
+    'filter' yöntemi kullanılır.
+
+3-'computed: { ... }': Bu bölüm, varolan verilere dayalı olarak değerlerini türeten hesaplanmış özellikleri belirtir.
+
+    -'completedItemCount()': Bu hesaplanmış özellik, 'todoList' dizisini filtreleyerek tamamlanan yapılacak öğelerin sayısını hesaplar.
+    -'unCompletedItemCount()': Bu hesaplanmış özellik, 'todoList' dizisini filtreleyerek tamamlanmamış yapılacak öğelerin sayısını hesaplar.
+
+4-'app.mount("#app");': Vue uygulamasını '#app' kimliğine sahip bir HTML öğesine monte eder.
+
+Özetlemek gerekirse, bu kod basit bir yapılacak listesi uygulaması oluşturur. Yeni yapılacak öğeler ekleyebilir, tamamlandı olarak işaretleyebilir 
+ve kaldırabilirsiniz. Hesaplanmış özellikler, tamamlanan ve tamamlanmayan yapılacak öğelerin sayısını dinamik olarak hesaplamanıza yardımcı olur.
