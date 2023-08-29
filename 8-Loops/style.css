@@ -1,0 +1,7 @@
+#app .uncompleted-item {
+    background-color: #dc354536;
+}
+
+#app .completed-item {
+    background-color: #19875440;
+}
