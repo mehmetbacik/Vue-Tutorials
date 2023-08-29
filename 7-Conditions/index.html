@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue3 | Conditions</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2 p-2">
+                    <button class="btn btn-sm btn-primary" @click="showContainer = !showContainer">Open-Close</button>
+                    <h1 v-if="!showContainer" class="text-danger">First Click Block</h1>
+                    <h1 v-else class="text-primary">Second Click Block</h1>
+                    <hr>
+                    <h3 :class="counterBoxClass">{{ counter }}</h3>
+                    <button class="btn btn-sm btn-success" @click="counter++">+++</button>
+                    <button class="btn btn-sm btn-danger" @click="counter--">---</button>
+                    <p v-if="counter < 0">Counter Negative</p>
+                    <p v-else-if="counter > 0">Counter Positive</p>
+                    <p v-else>Counter 0</p>
+                    <hr>
+                    <p v-show="counter < 0">Counter Negative</p>
+                    <p v-show="counter > 0">Counter Positive</p>
+                    <p v-show="counter == 0">Counter 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
