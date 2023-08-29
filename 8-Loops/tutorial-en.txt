@@ -1,0 +1,24 @@
+1-'data() { ... }': This section defines the initial data for the Vue application.
+
+    -'todoList': An array containing to-do items. Each item is represented as an object with properties like 'id' (a unique identifier), 
+    'text' (the content of the to-do), and 'completed' (a boolean indicating whether the to-do is completed).
+
+2-'methods: { ... }': This section defines methods that can be called within the Vue application.
+
+    -'addTodo(event)': This method is called when a new to-do is added. It pushes a new to-do object into the 'todoList' array. The 'id' is 
+    generated using the current timestamp, and the 'text' is taken from the input field value. The 'completed' property is set to 'false', 
+    indicating that the to-do is not completed. After adding, the input field value is cleared.
+    -'removeItem(todoItem)': This method removes a to-do item from the 'todoList' array. It uses the 'filter' method to create a new array 
+    excluding the selected to-do item.
+
+3-'computed: { ... }': This section defines computed properties that derive their values from the existing data.
+
+    -'completedItemCount()': This computed property calculates the number of completed to-do items by filtering the 'todoList' array and 
+    counting the number of items with 'completed' set to 'true'.
+    -'unCompletedItemCount()': This computed property calculates the number of uncompleted to-do items by filtering the 'todoList' array 
+    and counting the number of items with 'completed' set to 'false'.
+
+4-'app.mount("#app");': This mounts the Vue application to an HTML element with the id '#app'.
+
+-In summary, this code creates a simple to-do list application where you can add new to-do items, mark them as completed, and remove them. 
+The computed properties help you dynamically calculate the number of completed and uncompleted to-do items.
